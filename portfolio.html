@@ -1,0 +1,424 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="Zainab Nowfer, MIS student at NSBM Green University, showcasing web development skills, HTML, CSS, JavaScript, WordPress, and projects.">
+  <meta name="keywords" content="Zainab Nowfer, NSBM, MIS student, web developer, HTML, CSS, JavaScript, WordPress">
+  <meta name="author" content="Zainab Nowfer">
+
+  <title>Zainab Nowfer | Web Developer Portfolio</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: #0b1020;
+      color: #f8fafc;
+      font-family: Arial, sans-serif;
+    }
+
+    .gradient-text {
+      background: linear-gradient(90deg, #67e8f9, #c4b5fd);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .glass {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(12px);
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVIGATION -->
+  <header class="sticky top-0 z-50 border-b border-white/10 bg-slate-950/90">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between p-5">
+
+      <a href="#home" class="text-xl font-bold">
+        Zainab<span class="gradient-text">.</span>
+      </a>
+
+      <button id="menuBtn"
+        class="text-2xl md:hidden"
+        aria-label="Toggle navigation"
+        aria-expanded="false">
+        ☰
+      </button>
+
+      <div id="navMenu"
+        class="hidden absolute left-0 top-full w-full flex-col gap-5 bg-slate-950 p-6 md:static md:flex md:w-auto md:flex-row md:bg-transparent md:p-0">
+
+        <a href="#home" class="hover:text-cyan-300">Home</a>
+        <a href="#skills" class="hover:text-cyan-300">Skills</a>
+        <a href="#projects" class="hover:text-cyan-300">Projects</a>
+        <a href="#about" class="hover:text-cyan-300">About</a>
+        <a href="#contact" class="hover:text-cyan-300">Contact</a>
+      </div>
+
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HERO SECTION -->
+    <section id="home"
+      class="mx-auto grid max-w-7xl items-center gap-12 px-6 py-24 md:grid-cols-2 md:py-32">
+
+      <div>
+        <p class="mb-5 text-sm font-semibold uppercase tracking-widest text-cyan-300">
+          MIS Student · Aspiring Web Developer
+        </p>
+
+        <h1 class="text-5xl font-extrabold leading-tight md:text-7xl">
+          Hi, I'm <span class="gradient-text">Zainab Nowfer</span>
+        </h1>
+
+        <h2 class="mt-5 text-2xl font-semibold text-slate-300">
+          Building modern digital experiences.
+        </h2>
+
+        <p class="mt-6 max-w-xl leading-8 text-slate-400">
+          I'm a Management Information Systems student at NSBM Green
+          University. I enjoy creating attractive, responsive and
+          user-friendly websites using HTML, CSS, JavaScript and WordPress.
+        </p>
+
+        <div class="mt-8 flex flex-wrap gap-4">
+          <a href="#projects"
+            class="rounded-xl bg-cyan-300 px-6 py-3 font-bold text-slate-950 transition hover:-translate-y-1 hover:bg-cyan-200">
+            View My Projects →
+          </a>
+
+          <a href="#contact"
+            class="rounded-xl border border-white/20 px-6 py-3 font-semibold transition hover:bg-white/10">
+            Contact Me
+          </a>
+        </div>
+      </div>
+
+      <!-- PROFILE CARD -->
+      <div class="flex justify-center">
+        <div class="glass w-full max-w-sm rounded-3xl p-8 text-center shadow-2xl shadow-violet-950/40">
+
+          <div class="mx-auto flex h-32 w-32 items-center justify-center rounded-full bg-gradient-to-br from-cyan-300 to-violet-400 text-4xl font-black text-slate-950">
+            ZN
+          </div>
+
+          <h2 class="mt-6 text-3xl font-bold">Zainab Nowfer</h2>
+
+          <p class="mt-2 text-slate-400">
+            MIS Student at NSBM Green University
+          </p>
+
+          <div class="mt-7 grid grid-cols-3 gap-3">
+            <div class="rounded-xl bg-white/5 p-3">
+              <p class="font-bold text-cyan-300">HTML</p>
+              <p class="mt-1 text-xs text-slate-400">Structure</p>
+            </div>
+
+            <div class="rounded-xl bg-white/5 p-3">
+              <p class="font-bold text-violet-300">CSS</p>
+              <p class="mt-1 text-xs text-slate-400">Design</p>
+            </div>
+
+            <div class="rounded-xl bg-white/5 p-3">
+              <p class="font-bold text-cyan-300">JS</p>
+              <p class="mt-1 text-xs text-slate-400">Interactive</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="border-y border-white/10 bg-white/[0.02] px-6 py-24">
+
+      <div class="mx-auto max-w-7xl">
+
+        <div class="mb-12 text-center">
+          <p class="font-semibold uppercase tracking-widest text-cyan-300">
+            My Expertise
+          </p>
+
+          <h2 class="mt-3 text-4xl font-bold md:text-5xl">
+            Skills & Technologies
+          </h2>
+
+          <p class="mx-auto mt-4 max-w-2xl text-slate-400">
+            Technologies I use and continue to develop as I learn web development.
+          </p>
+        </div>
+
+        <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-5">
+
+          <article class="glass rounded-2xl p-6 transition hover:-translate-y-2">
+            <div class="mb-4 text-3xl">🌐</div>
+            <h3 class="text-xl font-bold">HTML5</h3>
+            <p class="mt-3 text-sm leading-6 text-slate-400">
+              Semantic website structure and accessible content.
+            </p>
+          </article>
+
+          <article class="glass rounded-2xl p-6 transition hover:-translate-y-2">
+            <div class="mb-4 text-3xl">🎨</div>
+            <h3 class="text-xl font-bold">CSS3</h3>
+            <p class="mt-3 text-sm leading-6 text-slate-400">
+              Modern layouts, styling and responsive designs.
+            </p>
+          </article>
+
+          <article class="glass rounded-2xl p-6 transition hover:-translate-y-2">
+            <div class="mb-4 text-3xl">⚡</div>
+            <h3 class="text-xl font-bold">JavaScript</h3>
+            <p class="mt-3 text-sm leading-6 text-slate-400">
+              Interactive features and dynamic user experiences.
+            </p>
+          </article>
+
+          <article class="glass rounded-2xl p-6 transition hover:-translate-y-2">
+            <div class="mb-4 text-3xl">📝</div>
+            <h3 class="text-xl font-bold">WordPress</h3>
+            <p class="mt-3 text-sm leading-6 text-slate-400">
+              Website creation and content management.
+            </p>
+          </article>
+
+          <article class="glass rounded-2xl p-6 transition hover:-translate-y-2">
+            <div class="mb-4 text-3xl">💻</div>
+            <h3 class="text-xl font-bold">Web Design</h3>
+            <p class="mt-3 text-sm leading-6 text-slate-400">
+              User-friendly and mobile-responsive interfaces.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="mx-auto max-w-7xl px-6 py-24">
+
+      <div class="mb-12">
+        <p class="font-semibold uppercase tracking-widest text-cyan-300">
+          My Portfolio
+        </p>
+
+        <h2 class="mt-3 text-4xl font-bold md:text-5xl">
+          Featured Projects
+        </h2>
+
+        <p class="mt-4 text-slate-400">
+          Two example projects demonstrating my web development interests.
+        </p>
+      </div>
+
+      <div class="grid gap-8 md:grid-cols-2">
+
+        <!-- PROJECT 1 -->
+        <article class="glass overflow-hidden rounded-3xl transition hover:-translate-y-2">
+
+          <div class="bg-gradient-to-br from-cyan-400/20 to-violet-500/30 p-10">
+            <div class="rounded-2xl border border-white/10 bg-slate-950 p-6">
+              <p class="text-sm text-cyan-300">CREATIVE STUDIO</p>
+              <h3 class="mt-4 text-3xl font-bold">
+                Design that inspires.
+              </h3>
+              <p class="mt-3 text-sm text-slate-400">
+                Creative ideas. Digital solutions.
+              </p>
+              <div class="mt-5 h-2 w-24 rounded bg-cyan-300"></div>
+            </div>
+          </div>
+
+          <div class="p-7">
+            <p class="text-sm font-bold text-cyan-300">PROJECT 01 · DEMO</p>
+
+            <h3 class="mt-3 text-2xl font-bold">
+              Creative Studio Landing Page
+            </h3>
+
+            <p class="mt-4 leading-7 text-slate-400">
+              A modern landing page concept for a creative agency,
+              featuring a hero section, service highlights and clear
+              calls to action.
+            </p>
+
+            <div class="mt-5 flex flex-wrap gap-2">
+              <span class="rounded-lg bg-white/10 px-3 py-2 text-xs">HTML</span>
+              <span class="rounded-lg bg-white/10 px-3 py-2 text-xs">Tailwind CSS</span>
+              <span class="rounded-lg bg-white/10 px-3 py-2 text-xs">JavaScript</span>
+            </div>
+          </div>
+
+        </article>
+
+        <!-- PROJECT 2 -->
+        <article class="glass overflow-hidden rounded-3xl transition hover:-translate-y-2">
+
+          <div class="bg-gradient-to-br from-violet-400/20 to-pink-400/20 p-10">
+            <div class="rounded-2xl border border-white/10 bg-slate-950 p-6">
+              <p class="text-sm text-violet-300">BLOOM STORE</p>
+              <h3 class="mt-4 text-3xl font-bold">
+                Find your favourites.
+              </h3>
+              <div class="mt-6 grid grid-cols-3 gap-3">
+                <div class="h-16 rounded-xl bg-gradient-to-br from-pink-300/70 to-violet-500/70"></div>
+                <div class="h-16 rounded-xl bg-gradient-to-br from-cyan-300/70 to-blue-500/70"></div>
+                <div class="h-16 rounded-xl bg-gradient-to-br from-amber-200/70 to-pink-400/70"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-7">
+            <p class="text-sm font-bold text-violet-300">PROJECT 02 · DEMO</p>
+
+            <h3 class="mt-3 text-2xl font-bold">
+              Bloom Online Store
+            </h3>
+
+            <p class="mt-4 leading-7 text-slate-400">
+              A sample online store for a lifestyle brand, designed
+              with product cards, simple navigation and a responsive
+              shopping-style interface.
+            </p>
+
+            <div class="mt-5 flex flex-wrap gap-2">
+              <span class="rounded-lg bg-white/10 px-3 py-2 text-xs">HTML</span>
+              <span class="rounded-lg bg-white/10 px-3 py-2 text-xs">CSS</span>
+              <span class="rounded-lg bg-white/10 px-3 py-2 text-xs">JavaScript</span>
+            </div>
+          </div>
+
+        </article>
+
+      </div>
+
+      <p class="mt-7 text-sm leading-6 text-slate-500">
+        Note: These are demo concepts. Replace them with your completed
+        projects and actual project links when available.
+      </p>
+
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="border-y border-white/10 bg-white/[0.02] px-6 py-24">
+
+      <div class="mx-auto grid max-w-7xl gap-10 md:grid-cols-2">
+
+        <div>
+          <p class="font-semibold uppercase tracking-widest text-cyan-300">
+            About Me
+          </p>
+
+          <h2 class="mt-3 text-4xl font-bold md:text-5xl">
+            A little about my journey.
+          </h2>
+        </div>
+
+        <div>
+          <p class="leading-8 text-slate-400">
+            I'm Zainab Nowfer, a Management Information Systems student
+            at NSBM Green University. I'm interested in technology,
+            business and creating useful digital experiences.
+          </p>
+
+          <p class="mt-5 leading-8 text-slate-400">
+            I'm building my knowledge of HTML, CSS, JavaScript and
+            WordPress through learning and practice. I enjoy exploring
+            modern web design and improving my skills with every project.
+          </p>
+
+          <div class="mt-7 space-y-4">
+            <p>✓ Responsive web design</p>
+            <p>✓ Clean and organized code</p>
+            <p>✓ Creative problem-solving</p>
+            <p>✓ Continuous learning</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="mx-auto max-w-7xl px-6 py-24">
+
+      <div class="rounded-3xl border border-violet-400/20 bg-gradient-to-br from-violet-500/10 to-cyan-400/10 p-8 md:p-14">
+
+        <p class="font-semibold uppercase tracking-widest text-cyan-300">
+          Contact Me
+        </p>
+
+        <h2 class="mt-4 text-4xl font-bold md:text-5xl">
+          Let's build something great.
+        </h2>
+
+        <p class="mt-5 max-w-2xl leading-8 text-slate-400">
+          Interested in collaborating, discussing a project or
+          connecting with me? Feel free to send me an email.
+        </p>
+
+        <!-- Replace with your real email -->
+        <a href="mailto:hello@example.com?subject=Portfolio%20Enquiry"
+          class="mt-8 inline-block rounded-xl bg-cyan-300 px-7 py-4 font-bold text-slate-950 transition hover:bg-cyan-200">
+          Say Hello ↗
+        </a>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-white/10 px-6 py-7 text-center text-sm text-slate-500">
+    <p>
+      © <span id="year"></span> Zainab Nowfer.
+      Designed with HTML, Tailwind CSS and JavaScript.
+    </p>
+  </footer>
+
+  <!-- JAVASCRIPT -->
+  <script>
+    // Mobile navigation menu
+    const menuBtn = document.getElementById("menuBtn");
+    const navMenu = document.getElementById("navMenu");
+
+    menuBtn.addEventListener("click", function () {
+      const isOpen = !navMenu.classList.contains("hidden");
+
+      navMenu.classList.toggle("hidden");
+      navMenu.classList.toggle("flex");
+
+      menuBtn.setAttribute("aria-expanded", String(!isOpen));
+      menuBtn.textContent = isOpen ? "☰" : "✕";
+    });
+
+    // Close the menu after clicking a navigation link
+    navMenu.querySelectorAll("a").forEach(function (link) {
+      link.addEventListener("click", function () {
+        navMenu.classList.add("hidden");
+        navMenu.classList.remove("flex");
+        menuBtn.setAttribute("aria-expanded", "false");
+        menuBtn.textContent = "☰";
+      });
+    });
+
+    // Automatically update the footer year
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+  </script>
+
+</body>
+</html>
